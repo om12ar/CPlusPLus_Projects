@@ -4,7 +4,7 @@
 #include <fstream>
 using namespace std;
 
-class three {
+class chainedSeparateOverflow {
 public:
 	const char DELETE_FLAG = '*';
 	const int BUCKET_SIZE = 1;
@@ -446,7 +446,7 @@ public:
 				break;
 			}
 			case 8:
-				cout << setprecision(9) << "Avarage time for one is : "
+				cout << setprecision(9) << "Avarage time for chainedSeparateOverflow is : "
 						<< avgTime() << endl << endl;
 				break;
 			case 9:
@@ -462,7 +462,7 @@ public:
 	}
 };
 
-class two {
+class doubleHashing {
 public:
 
 	const char DELETE_FLAG = '*';
@@ -856,7 +856,7 @@ public:
 				break;
 			}
 			case 8:
-				cout << setprecision(9) << "Avarage time for one is : "
+				cout << setprecision(9) << "Avarage time for doubleHashing is : "
 						<< avgTime() << endl << endl;
 				break;
 			case 9:
@@ -873,7 +873,7 @@ public:
 
 };
 
-class one {
+class progressiveOverflow {
 public:
 
 	const char DELETE_FLAG = '*';
@@ -1273,7 +1273,7 @@ public:
 				break;
 			}
 			case 8:
-				cout << setprecision(9) << "Avarage time for one is : "
+				cout << setprecision(9) << "Avarage time for progressiveOverflow is : "
 						<< avgTime() << endl << endl;
 				break;
 			case 9:
@@ -1291,13 +1291,13 @@ public:
 
 int main() {
 
-	one X1;
+	progressiveOverflow X1;
 	X1.run();
 
-	two X2;
+	doubleHashing X2;
 	X2.run();
 
-	three X3;
+	chainedSeparateOverflow X3;
 	X3.run();
 
 }
